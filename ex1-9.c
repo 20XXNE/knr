@@ -8,7 +8,9 @@ main(){
 				putchar(' ');
 				if (c == EOF){
 				 break; 
-			 }
-		}				
+			 	}
+			}			
+		putchar(c);	
+		}
 	}
 }

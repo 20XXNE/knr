@@ -2,33 +2,18 @@
 
 main(){
 	int c;
-	char tb = "\t";
-	char bsp = "\b";
-	char bsl = "\\";
-	while ((c = getchar()) != EOF){
-		if (c == '\t'){
-			while ((c == getchar()) == '\t'){
-				putchar("\t");
-				if (c == EOF){
-					break;
-				}
-			}
+	while ((c = getchar()) != EOF){ //while the program is reading input
+		if (c == '\t'){		
+			printf("\\t"); //i dunno how to put strings in a variable so im putting it as a string there.  also someone said putting two slashes is necessary, i think because without it it would just be text formatting?!
+		}
+		else if (c == '\\'){
+			printf("\\\\");
 		}
 		else if (c == '\b'){
-			while ((c == getchar()) == "\b){
-				putchar("\b");
-				if (c == EOF){
-					break;
-				}
-			}
+			printf("\\b");
 		}
-		else if (c == "\"){
-			while ((c == getchar()) == "\"){
-				putchar("\\");
-				if (c == EOF){
-					break;
-				}
-			}
+		else{
+			putchar(c);
 		}
 	}
 }
