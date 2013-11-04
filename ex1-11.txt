@@ -1,0 +1,2 @@
+
+To test wc, one would input normal words and sentences.  However, on the surface, this would not uncover any bugs that would bring wc to its knees.  To really test for bugs, one would use more obscure symbols and characers, such as "%" and "^".
