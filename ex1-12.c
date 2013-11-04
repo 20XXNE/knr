@@ -17,7 +17,7 @@ main(){
 			state = IN;
 		}
 		if (state == IN){
-			printf("%d", c);
+			putchar(c);
 			first = 0;
 		}
 		else{
