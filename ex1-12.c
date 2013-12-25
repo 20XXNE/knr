@@ -20,10 +20,8 @@ main(){
 			putchar(c);
 			first = 0;
 		}
-		else{
-			if (first == 0){
-				printf("\n");
-			}
+		else if (first == 0){
+			printf("\n");
 		}
 	}
 }
